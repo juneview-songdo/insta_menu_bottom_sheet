@@ -13,6 +13,8 @@ description here
 2. open terminal in the juneflow project root directory, enter the following command.
  ```bash
  june add insta_menu_bottom_sheet
+ flutter run lib/app/_/_/interaction/view.blueprint.popup/bottom_sheet/insta_menu_bottom_sheet/usage.dart -d chrome
+
  ```
 
 ## Screenshots
