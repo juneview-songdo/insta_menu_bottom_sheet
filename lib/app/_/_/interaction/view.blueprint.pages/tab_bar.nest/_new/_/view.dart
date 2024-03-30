@@ -13,7 +13,6 @@ class NewView extends StatefulWidget {
 
 class NewViewState extends State<NewView>
     with StateMother, SingleTickerProviderStateMixin {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

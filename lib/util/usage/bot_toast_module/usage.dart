@@ -1,27 +1,25 @@
-import 'dart:async';
-
-import 'package:after_layout/after_layout.dart';
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../../../../../main.dart';
-import 'loading.dart';
+import '../../../main.dart';
 
 String _noteName = "Note";
 
 T _button00 = T("00", onTap: (BuildContext context) async {
-  NewLoading.start();
-
-  await Future.delayed(Duration(seconds: 2));
-  NewLoading.stop();
+  ////////////////////////////////////////
+  var cancel = BotToast.showText(text:"xxxx");
+  ////////////////////////////////////////
 });
 
 T _button01 = T("01", onTap: (BuildContext context) async {
-  NewLoading.start(seconds: 3);
+  ////////////////////////////////////////
+  var cancel = BotToast.showLoading();
+  ////////////////////////////////////////
 });
 
 T _button02 = T("02", onTap: (BuildContext context) async {
   ////////////////////////////////////////
-
+  var cancel = BotToast.showSimpleNotification(title: "init");
   ////////////////////////////////////////
 });
 
@@ -608,6 +606,7 @@ T _button99 = T("99", onTap: (BuildContext context) async {
 });
 
 main() async {
+
   MyAppHome = FunctionNoteKit(
     title: _noteName,
     button00: _button00,

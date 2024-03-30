@@ -24,7 +24,8 @@ class NewLoading {
         backButtonBehavior: backButtonBehavior,
         ignoreContentClick: ignoreContentClick,
         animationDuration: Duration(milliseconds: animationMilliseconds),
-        animationReverseDuration: Duration(milliseconds: animationReverseMilliseconds),
+        animationReverseDuration:
+            Duration(milliseconds: animationReverseMilliseconds),
         duration: Duration(seconds: seconds),
         backgroundColor: Color(backgroundColor),
         align: Alignment.center,
@@ -35,7 +36,5 @@ class NewLoading {
 
   static stop() {
     cancelInstance.call();
-
   }
-
 }

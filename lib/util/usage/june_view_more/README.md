@@ -6,8 +6,10 @@
 </p>
 
 # june_view_more
+
 expandable view from june_view
-include 
+include
+
 - [x] bottom navigation bar
 - [x] drawer
 - [x] tap bar
@@ -17,12 +19,16 @@ include
 - [x] in app notification
 - [x] toast
 
-##  Installation
-1. If the juneflow project doesn't exist, please create it by following [this guide](https://doc.juneflow.org/get-started).
+## Installation
+
+1. If the juneflow project doesn't exist, please create it by
+   following [this guide](https://doc.juneflow.org/get-started).
 2. open terminal in the juneflow project root directory, enter the following command.
+
  ```bash
  june add june_view_more
  ```
 
 ## Usage
+
 Usage here

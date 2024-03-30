@@ -29,11 +29,8 @@ class NewViewState extends State<NewView> with StateMother {
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           //textTheme.bodyLarge!.color!,
           selectedItemColor: Theme.of(context).textTheme.bodyLarge!.color!,
-          unselectedItemColor: Theme.of(context)
-              .textTheme
-              .bodyLarge!
-              .color!
-              .withOpacity(0.4),
+          unselectedItemColor:
+              Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.4),
           selectedFontSize: 14,
           unselectedFontSize: 14,
           currentIndex: _selectedIndex,

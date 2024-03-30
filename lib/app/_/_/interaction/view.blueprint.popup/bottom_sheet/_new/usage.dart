@@ -17,7 +17,7 @@ class Usage extends StatefulWidget {
   State<Usage> createState() => _UsageState();
 }
 
-class _UsageState extends State<Usage> with AfterLayoutMixin<Usage> {
+class _UsageState extends State<Usage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,13 +64,6 @@ class _UsageState extends State<Usage> with AfterLayoutMixin<Usage> {
         horizontal: 20,
         vertical: 7,
       );
-
-  @override
-  FutureOr<void> afterFirstLayout(BuildContext context) {
-    Future.delayed(const Duration(milliseconds: 700), () {
-      openWidget(context);
-    });
-  }
 }
 
 main() async {
